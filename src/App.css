@@ -1,38 +1,309 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  padding: 20px;
+  text-rendering: optimize-speed;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.card-component {
+  height: 215px !important;
+  width: 100%;
+  min-height: 215px;
+  min-width: 100%;
+  border-radius: 20px;
+}
+
+.new-card-component {
+  background-color: #88f2fc;
+  background-image: linear-gradient(to bottom, #52e1ef, #d0edb9d4 60%);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1) !important;
+
+  transform: translateY(1.5rem);
+  margin-right: 10px;
+}
+
+.tile-card-component {
+  position: relative;
+  box-shadow: 3px 3px 12px 2px #00000036;
+  transition: 0.4s;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 7%;
+  z-index: 0;
+  cursor: pointer;
+  transform: translateY(1.5rem);
+}
+
+.tile-card-component:not(:nth-child(1)) {
+  margin-left: -3rem;
+}
+
+/*.tile-card-component:first-child {
+    margin-left: -3rem;
+}*/
+
+.tile-card-component:not(:last-child):hover,
+.tile-card-component:not(:last-child):focus-within {
+  transform: translateY(-3.5rem);
+}
+
+/* search-layout */
+
+.user-avatar {
+  position: relative;
+}
+.user-avatar .ant-avatar {
+  display: block;
+  width: 100%;
+  min-height: 200px;
+}
+.menu {
+  font-size: 45px;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.search-layout .tile-card-grid-icon,
+.search-layout .tile-card-row-icon,
+.search-layout .tile-card-stack-icon {
+  display: block;
+  min-height: 200px;
+  width: 100%;
+  font-size: 140px;
+  border: 0;
+  text-align: center;
+  border-radius: 0;
+  box-shadow: 0 2px 12px 5px #eee;
+  cursor: pointer;
+}
+.tile-card-grid-icon {
+  border-bottom-left-radius: 12px;
+}
+.tile-card-row-icon {
+  border-bottom-right-radius: 12px;
+  position: relative;
+}
+.tile-card-row-icon:after,
+.tile-card-row-icon:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50%;
+  width: 2px;
+  background-color: #666;
+}
+.tile-card-row-icon:after {
+  right: 0;
+}
+.tile-card-row-icon:before {
+  left: 0;
+}
+.tile-card-stack-icon svg {
+  transform: rotate(90deg);
+}
+
+/* search-bar */
+
+.search-bar {
+  margin: 10px 0;
+}
+.search-bar .ant-input {
+  padding-right: 15px;
+  padding-left: 30px;
+  box-shadow: 1px 7px 5px 7px #f3f3f3;
+  border-radius: 20px;
+}
+.search-bar .ant-input-suffix {
+  right: auto;
+  left: 10px;
+}
+
+/* search-dropdown */
+
+.search-dropdown {
+  margin-bottom: 10px;
+}
+.search-dropdown i {
+  float: right;
+}
+
+.search-dropdown .ant-btn {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 7px 7px 4px #f3f3f3;
+}
+.search-dropdown .ant-btn .anticon .anticon-down {
+  float: right;
+}
+
+.bucket-tab {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bucket-tab .ant-tabs-nav,
+.bucket-tab .ant-tabs-nav .ant-tabs-tab-active {
+  color: #88f2fc !important;
+}
+.folder-tab {
+  text-align: center;
+}
+.folder-tab .ant-tabs-nav {
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* search-tree */
+.search-tree-collapse {
+  background: none !important;
+  border-radius: 20px;
+  box-shadow: 0 7px 6px 3px #f3f3f3;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-tree-header {
+  text-align: center;
+  border-radius: 20px;
+}
+.search-tree {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+.search-tree .list-component {
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding: 10px -5px;
+  text-align: left;
+}
+
+/* TileCard */
+.card-section1 {
+  box-shadow: 0 7px 6px 3px #f3f3f3;
+}
+
+.TileCardStackSection1 {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.TileCardStackSection1::-webkit-scrollbar {
+  height: 5px;
+}
+.TileCardStackSection1::-webkit-scrollbar-thumb {
+  background: #cbc7c7;
+}
+
+.TileCardStackSection1 .new-card-component {
+  transform: translateY(1.5rem);
+}
+
+.TileCardStackSection2 {
+  display: none;
+  flex-wrap: wrap;
+}
+.stack-list .TileCardStackSection2 {
+  display: flex;
+}
+
+.TileCardStackSection2 .card {
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  min-width: 0;
+  width: 100%;
+}
+
+.TileCardStackSection2 .tile-card-component:not(:nth-child(1)) {
+  margin-left: initial;
+}
+.card {
+  z-index: 1;
+  /*		height: 250px !important; min-width: 175px !important; */
+  border-radius: 5px;
+  justify-self: end;
+  align-self: center;
+  height: 215px;
+  width: 150px;
+  min-height: 215px;
+  min-width: 150px;
+  padding: 0.5rem;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  padding: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  /*.TileCard Inner Grid {*/
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-gap: 1px;
+  background-color: grey;
+  background-blend-mode: multiply;
+  position: relative;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-device-width: 600px) {
+  .search-layout .tile-card-grid-icon,
+  .search-layout .tile-card-row-icon,
+  .search-layout .tile-card-stack-icon {
+    min-height: 70px !important;
+    font-size: 45px !important;
+    box-shadow: 0 7px 6px 3px #f3f3f3;
   }
-  to {
-    transform: rotate(360deg);
+  .search-bar .ant-input {
+    height: 50px !important;
+  }
+  .search-bar .ant-input::placeholder {
+    text-align: center;
+    font-size: 25px;
+  }
+  .search-bar .ant-input-suffix {
+    font-size: 25px;
+  }
+  .search-dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-dropdown i {
+    float: right;
+  }
+  .search-dropdown div {
+    width: 100%;
+  }
+
+  .new-margin-container {
+    margin-bottom: initial;
+    margin-left: 0;
+  }
+  .card-component {
+    height: 215px !important;
+    min-height: 215px !important;
+    width: 40px !important;
+    min-width: 40px;
+    border-radius: 35px;
+  }
+  .card-section2 .TileCardStackSection2 .card-component {
+    height: 40px !important;
+    min-height: 40px !important;
+    width: 100% !important;
+    min-width: 100%;
+    border-radius: 35px;
+  }
+  .TileCardStackSection2 .card {
+    width: 163px !important;
+    min-width: 163px !important;
   }
 }
