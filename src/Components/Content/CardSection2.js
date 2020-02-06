@@ -1,6 +1,6 @@
 import React from "react";
 
-import { TileCardStackSection2 } from "./TileCardStackSection2/TileCardStackSection2";
+import { TileCardStackSection2 } from "./TileCardStackSection2";
 
 export const CardSection2 = props => {
   return (

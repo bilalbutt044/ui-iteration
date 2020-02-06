@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import TileCard from "../../../../../../Shared/TileCard/TileCard";
+import TileCard from "./TileCard";
 
 export const TileCardStackSection1 = props => {
   const [images, SetImages] = useState([]);

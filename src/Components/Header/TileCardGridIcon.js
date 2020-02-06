@@ -1,7 +1,5 @@
 import React from "react";
-import { FaBars } from "react-icons/fa";
-
-export const TileCardStackIcon = props => {
+export const TileCardGridIcon = props => {
   const handleClck = () => {
     if (document.body.classList.contains("stack-list")) {
       document.body.classList.remove("stack-list");
@@ -11,8 +9,7 @@ export const TileCardStackIcon = props => {
   };
 
   return (
-    <div className="tile-card-stack-icon" onClick={() => handleClck()}>
-      <FaBars />
+    <div className="tile-card-grid-icon" onClick={() => handleClck()}>
     </div>
   );
 };

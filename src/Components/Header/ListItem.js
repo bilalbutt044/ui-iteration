@@ -11,7 +11,7 @@ export default ({ value }) => {
 
   return (
     <li onClick={e => handleClick(e)}>
-      {value} {selected && <span>{"x"}</span>}
+      {value} {selected && <span className="list-item-icon">{"x"}</span>}
     </li>
   );
 };

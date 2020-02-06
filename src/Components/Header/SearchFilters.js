@@ -1,6 +1,6 @@
 import React from "react";
-import { SearchDropDown } from "./SearchDropDown/SearchDropDown";
-import { SearchTree } from "./SearchTree/SearchTree";
+import { SearchDropDown } from "./SearchDropDown";
+import { SearchTree } from "./SearchTree";
 export const SearchFilters = props => {
   return (
     <>

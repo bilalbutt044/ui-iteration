@@ -1,7 +1,7 @@
 import React from "react";
 import { Tabs } from "antd";
 
-import { FolderTab } from "./FolderTab/FolderTab";
+import { FolderTab } from "./FolderTab";
 
 const { TabPane } = Tabs;
 
@@ -14,16 +14,15 @@ export const BucketTab = props => {
     <>
       <Tabs defaultActiveKey="1" onChange={callback} className="bucket-tab">
         <TabPane tab="Tab 1" key="1">
-          Content of Tab Pane 1
+          <FolderTab />;
         </TabPane>
         <TabPane tab="Tab 2" key="2">
-          Content of Tab Pane 2
+          <FolderTab />;
         </TabPane>
         <TabPane tab="Tab 3" key="3">
-          Content of Tab Pane 3
+          <FolderTab />;
         </TabPane>
       </Tabs>
-      <FolderTab />;
     </>
   );
 };

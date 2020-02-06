@@ -1,6 +1,6 @@
 import React from "react";
 import { Collapse } from "antd";
-import { ListComponent } from "./ListComponent/ListComponent";
+import { ListComponent } from "./ListComponent";
 
 const categories = [
   {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
-import NewCardButton from "../../../../../Shared/NewCardButton/NewCardButton";
-import { TileCardStackSection1 } from "./TileCardStackSection1/TileCardStackSection1";
+import NewCardButton from "./NewCardButton";
+import { TileCardStackSection1 } from "./TileCardStackSection1";
 
 export const CardSection1 = props => {
   return (
