@@ -13,7 +13,7 @@ ul {
 }
 
 .card-component {
-  height: 215px !important;
+  height: 215px;
   min-height: 215px;
   /* width: 200px;
   min-width: 200px; */
@@ -128,7 +128,7 @@ ul {
   background-image: url("./assets/bars.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 55%;
+  background-size: 50%;
 }
 
 /* header */
@@ -202,6 +202,10 @@ ul {
 .search-tree-header {
   text-align: center;
   border-radius: 20px !important;
+  background-image: url("./assets/bars.png");
+  background-repeat: no-repeat;
+  background-position: 46% 15px;
+  background-size: 2%;
 }
 .search-tree {
   display: flex;
@@ -211,7 +215,7 @@ ul {
 .search-tree .list-component {
   flex: 0 0 20%;
   max-width: 20%;
-  padding: 10px -5px;
+  padding: 10px 25px;
   text-align: left;
 }
 .search-tree .list-component .list-component-heading {
@@ -300,7 +304,7 @@ ul {
 } */
 
 @media only screen and (max-width: 991px) {
-  .user-avatar .ant-avatar {
+  /* .user-avatar .ant-avatar {
     min-height: 200px !important;
   }
   .search-layout .tile-card-grid-icon,
@@ -309,23 +313,23 @@ ul {
     min-height: 200px !important;
     font-size: 130px !important;
     /* box-shadow: 0 7px 6px 3px #f3f3f3; */
-  }
-  .TileCardStackSection2 .card-component {
+  /* } */
+  */ .TileCardStackSection2 .card-component {
     height: 40px !important;
     min-height: 40px !important;
     width: 100%;
   }
 }
 
-@media only screen and (max-device-width: 576px) {
+@media only screen and (max-device-width: 575px) {
   .user-avatar .ant-avatar {
-    min-height: 400px !important;
+    min-height: 300px !important;
   }
   .search-layout .tile-card-grid-icon,
   .search-layout .tile-card-row-icon,
   .search-layout .tile-card-stack-icon {
     min-height: 70px !important;
-    font-size: 45px !important;
+    font-size: 35px !important;
     box-shadow: 0 7px 6px 3px #f3f3f3;
   }
   .search-bar .ant-input {
@@ -374,6 +378,9 @@ ul {
     width: initial;
     max-width: initial;
     padding-bottom: 10px;
+  }
+  .search-tree .list-component ul li {
+    padding: 5px 0;
   }
   .search-tree .list-component .list-item-icon {
     float: right;
