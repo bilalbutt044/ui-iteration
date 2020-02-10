@@ -204,7 +204,7 @@ ul {
   border-radius: 10px !important;
   background-image: url("./assets/bars.png");
   background-repeat: no-repeat;
-  background-position: 46% 15px;
+  background-position: 45% 46%;
   background-size: 2%;
 }
 .search-tree {
@@ -301,7 +301,7 @@ ul {
   }
 } */
 
-@media only screen and (max-device-width: 991px) {
+@media only screen and (max-width: 991px) {
   .card-section2 .TileCardStackSection2 .card-component {
     height: 40px !important;
     min-height: 40px !important;
@@ -309,8 +309,9 @@ ul {
   }
 }
 
-@media only screen and (max-device-width: 575px) {
+@media only screen and (max-width: 575px) {
   .user-avatar .ant-avatar {
+    height: 300px !important;
     min-height: 300px !important;
   }
   .search-layout .tile-card-grid-icon,
@@ -321,16 +322,16 @@ ul {
     /* box-shadow: 0 7px 6px 3px #f3f3f3; */
   }
   .search-bar .ant-input {
-    height: 50px !important;
+    /* height: 50px !important; */
     border-radius: 5px !important;
   }
   .search-bar .ant-input::placeholder {
     text-align: center;
-    font-size: 25px;
+    /* font-size: 25px; */
   }
-  .search-bar .ant-input-suffix {
+  /* .search-bar .ant-input-suffix {
     font-size: 25px;
-  }
+  } */
   .search-dropdown {
     display: flex;
     flex-direction: column;
@@ -356,6 +357,12 @@ ul {
     margin-top: -15px !important;
     border-radius: 5px !important;
   }
+
+  .search-tree-header {
+    background-position: 43% 50%;
+    background-size: 3%;
+  }
+
   .search-tree {
     display: flex;
     flex-direction: column;
