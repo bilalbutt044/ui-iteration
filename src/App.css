@@ -301,18 +301,8 @@ ul {
   }
 } */
 
-@media only screen and (max-width: 991px) {
-  /* .user-avatar .ant-avatar {
-    min-height: 200px !important;
-  }
-  .search-layout .tile-card-grid-icon,
-  .search-layout .tile-card-row-icon,
-  .search-layout .tile-card-stack-icon {
-    min-height: 200px !important;
-    font-size: 130px !important;
-    /* box-shadow: 0 7px 6px 3px #f3f3f3; */
-  /* } */
-  */ .TileCardStackSection2 .card-component {
+@media only screen and (max-device-width: 991px) {
+  .card-section2 .TileCardStackSection2 .card-component {
     height: 40px !important;
     min-height: 40px !important;
     width: 100%;
