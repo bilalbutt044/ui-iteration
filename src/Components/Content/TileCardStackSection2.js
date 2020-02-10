@@ -20,13 +20,13 @@ export const TileCardStackSection2 = props => {
 
   return images !== undefined ? (
     <Row className="TileCardStackSection2" gutter={[8, 16]}>
-      <Col lg={3} md={24} sm={24} xs={24}>
+      <Col lg={4} md={24} sm={24} xs={24}>
         <NewCardButton />
       </Col>
 
       {images.map((item, index) => (
         <React.Fragment key={index}>
-          <Col lg={3} md={6} sm={6} xs={12}>
+          <Col lg={4} md={6} sm={6} xs={12}>
             <TileCard image={item.download_url} />
           </Col>
         </React.Fragment>
