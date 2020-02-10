@@ -84,7 +84,7 @@ function menuItem(options) {
       {options.map(({ name, value }, index) => (
         <Menu.Item key={value}>{name}</Menu.Item>
       ))}
-      ;
+      
     </Menu>
   );
 }

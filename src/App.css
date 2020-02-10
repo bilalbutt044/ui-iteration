@@ -83,7 +83,7 @@ ul {
   border: 0;
   text-align: center;
   border-radius: 0;
-  box-shadow: 0 2px 12px 5px #eee;
+  /* box-shadow: 0 2px 12px 5px #eee; */
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
@@ -201,7 +201,7 @@ ul {
 }
 .search-tree-header {
   text-align: center;
-  border-radius: 20px !important;
+  border-radius: 10px !important;
   background-image: url("./assets/bars.png");
   background-repeat: no-repeat;
   background-position: 46% 15px;
@@ -215,7 +215,7 @@ ul {
 .search-tree .list-component {
   flex: 0 0 20%;
   max-width: 20%;
-  padding: 10px 25px;
+  padding-left: 10px;
   text-align: left;
 }
 .search-tree .list-component .list-component-heading {
@@ -224,7 +224,7 @@ ul {
 
 .search-tree .list-component .list-item-icon {
   float: right;
-  padding-right: 10px;
+  /* padding-right: 10px; */
 }
 
 /* TileCard */
@@ -266,14 +266,16 @@ ul {
 .TileCardStackSection2 .tile-card-component:not(:nth-child(1)) {
   margin-left: initial;
 }
+
 .card {
+  /*.mini-card {*/
   z-index: 1;
   /*		height: 250px !important; min-width: 175px !important; */
   border-radius: 5px;
   justify-self: end;
   align-self: center;
-  height: 215px;
-  width: 150px;
+  height: 215px !important;
+  width: 150px !important;
   min-height: 215px;
   min-width: 150px;
   padding: 0.5rem;
@@ -289,10 +291,6 @@ ul {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(15, 1fr);
   grid-gap: 1px;
-  background-color: grey;
-  background-blend-mode: multiply;
-  position: relative;
-  color: white;
 }
 
 /* @media only screen and (min-width: 768px) {
@@ -330,7 +328,7 @@ ul {
   .search-layout .tile-card-stack-icon {
     min-height: 70px !important;
     font-size: 35px !important;
-    box-shadow: 0 7px 6px 3px #f3f3f3;
+    /* box-shadow: 0 7px 6px 3px #f3f3f3; */
   }
   .search-bar .ant-input {
     height: 50px !important;
