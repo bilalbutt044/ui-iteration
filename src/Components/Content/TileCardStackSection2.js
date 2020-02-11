@@ -26,7 +26,7 @@ export const TileCardStackSection2 = props => {
 
       {images.map((item, index) => (
         <React.Fragment key={index}>
-          <Col lg={4} md={6} sm={6} xs={12}>
+          <Col className="stack-card-list" lg={4} md={6} sm={6} xs={12}>
             <TileCard image={item.download_url} />
           </Col>
         </React.Fragment>

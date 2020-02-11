@@ -375,6 +375,7 @@ ul {
   }
   .search-dropdown div {
     width: 100%;
+    padding-bottom: 5px;
   }
 
   .new-margin-container {
@@ -417,6 +418,9 @@ ul {
     min-width: 100%;
     border-radius: 35px;
   } */
+  /* .TileCardStackSection2 .stack-card-list {
+    padding: 8px 5% !important;
+  } */
   .card-section2 .TileCardStackSection2 .card-component {
     height: 40px !important;
     min-height: 40px !important;
@@ -424,8 +428,8 @@ ul {
     min-width: 100%;
     border-radius: 35px;
   }
-  /* .TileCardStackSection2 .card {
-    width: 163px !important;
-    min-width: 163px !important;
-  } */
+  .TileCardStackSection2 .card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
